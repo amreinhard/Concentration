@@ -17,10 +17,11 @@ struct Card {
     
     static func getUniqueIdentifier () -> Int {
         identifierFactory += 1
-        return Card.identifierFactory
+        return identifierFactory
+        
     }
     
-    init(identifier: Int) {
+    init() {
         self.identifier = Card.getUniqueIdentifier()
     }
 }
